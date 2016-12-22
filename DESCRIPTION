@@ -1,0 +1,13 @@
+Package: leeMM
+Type: Package
+Title: Paquete para accesar informacion de la Muestra Maestra
+Version: 1.0.0
+Author: Roberto Franco
+Maintainer: Roberto Franco <roberto.franco@nielsen.com>
+Description: El paquete contiene 5 funciones para acceder a la informacion de
+     la muestra maestra con la menor cantidad de texto posible.
+License: GPL-2 | GPL-3
+Encoding: UTF-8
+LazyData: true
+Depends:
+     sqldf

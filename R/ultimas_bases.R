@@ -1,16 +1,16 @@
 
 ultimotot<-function(indice) {
-     DirTots<-read.table("J:/CENSO/DATA/CENSO2015/DirectorioTots.txt",sep="/t",header = TRUE)
+     DirTots<-read.table("J:/CENSO/DATA/CENSO2015/DirectorioTots.txt",sep="\t",header = TRUE)
      as.character(DirTots[DirTots$Ind==indice,'Completo'][1])
 }
 
 previotot<-function(indice) {
-     DirTots<-read.table("J:/CENSO/DATA/CENSO2015/DirectorioTots.txt",sep="/t",header = TRUE)
+     DirTots<-read.table("J:/CENSO/DATA/CENSO2015/DirectorioTots.txt",sep="\t",header = TRUE)
      as.character(DirTots[DirTots$Ind==indice,'Completo'][2])
 }
 
 ultimouniv<-function(enh=TRUE) {
-     direcUnis<-read.table("J:/CENSO/DATA/CENSO2015/DirectorioUnis.txt",sep="/t",header = TRUE)
+     direcUnis<-read.table("J:/CENSO/DATA/CENSO2015/DirectorioUnis.txt",sep="\t",header = TRUE)
      if (enh==TRUE) {
           cual<-'Y'
      } else {
@@ -20,7 +20,7 @@ ultimouniv<-function(enh=TRUE) {
 }
 
 previouniv<-function(enh=TRUE) {
-     direcUnis<-read.table("J:/CENSO/DATA/CENSO2015/DirectorioUnis.txt",sep="/t",header = TRUE)
+     direcUnis<-read.table("J:/CENSO/DATA/CENSO2015/DirectorioUnis.txt",sep="\t",header = TRUE)
      if (enh==TRUE) {
           cual<-'Y'
      } else {
